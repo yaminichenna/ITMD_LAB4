@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Weather APP</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+
+  </head>
+  <body>
+  
+	<h1 id="title">Welcome to the Weather App</h1>
+		<div class="container">
+			
+
+			<div id ="userInput">
+				  <label for="place">Please enter the Location name:</label>
+				  <input type="text" id="place" name="place"><br><br>
+				   
+				  <button onclick="getWeatherByName()">Search</button>
+				 <p>Click the button to get weather details of your current location.</p>
+
+				<button onclick="getLocation()">Get Weather by Location</button>
+			</div>
+			<div id="dashboard">
+				<div id="city"> </div>
+				<div class="container">
+					<div id="iconURL">
+						<img src="">
+						<p id="comment"> </p>
+					</div>	
+					<div id="time">
+				
+					</div>
+					<div id="temp">
+					</div>
+					<div id="details">
+						
+					</div>				
+				</div>
+				
+				<div id="forecaste">
+				</div>
+			</div>
+			
+			
+	  </div>
+	<script src="index.js"></script>
+  </body>
+</html>
